@@ -556,6 +556,7 @@ section .container {
 }
 
 /* Dark overlay effect */
+#hero::before,
 #about::before,
 #skills::before,
 #contact::before,
@@ -574,6 +575,7 @@ section .container {
 }
 
 /* Ensure content appears above the overlay */
+#hero *,
 #about *,
 #skills *,
 #contact *,
