@@ -10,6 +10,15 @@
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -69,9 +78,17 @@
       </a>
 
       <div class="social-links text-center">
-        <a href="#" class="github"><i class="bi bi-github"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/regineriverah" class="github"
+          ><i class="bi bi-github"></i
+        ></a>
+        <a href="https://www.facebook.com/share/1AUJKRkT5W/" class="facebook"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/rxg.inx?igsh=N3I3cDZmOXZsYXh0"
+          class="instagram"
+          ><i class="bi bi-instagram"></i
+        ></a>
       </div>
 
       <nav id="navmenu" class="navmenu">
@@ -103,166 +120,302 @@
 
     <main class="main">
       <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section light-background">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>
-            As an Information Systems student with a passion for UI/UX design
-            and project coordination, I have designed various mobile and web
-            applications. My portfolio highlights these design projects, along
-            with a group portfolio website. I strive to create intuitive,
-            user-friendly experiences and continuously refine my design and
-            development skills.
-          </p>
-        </div>
-        <!-- End Section Title -->
+      <section id="portfolio" class="portfolio section-show">
+        <div class="container-fluid">
+          <!-- ======= Works ======= -->
+          <div class="container">
+            <div class="section-title">
+              <h2>Portfolio</h2>
+              <p>
+                As an Information Systems student with a passion for UI
+                design and project coordination, I have designed various mobile
+                and web applications. My portfolio highlights these design
+                projects, along with a group portfolio website. I strive to
+                create intuitive and continuously
+                refine my design and development skills.
+              </p>
+            </div>
 
-        <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
-          >
-            <ul
-              class="portfolio-filters isotope-filters"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Mobile Application</li>
-              <li data-filter=".filter-product">Web Application</li>
-            </ul>
-            <!-- End Portfolio Filters -->
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                  <li data-filter="*" class="filter-active">All</li>
+                  <li data-filter=".filter-app" class="">
+                    UI Design
+                  </li>
+                  <li data-filter=".filter-web" class="">Software Projects</li>
+                </ul>
+              </div>
+            </div>
 
             <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              class="row portfolio-container"
+              style="position: relative; height: 1777.38px"
             >
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+                class="col-lg-6 col-md-12 portfolio-item filter-web"
+                style="position: absolute; left: 0px; top: 0px"
               >
-                <div class="portfolio-content h-100">
+                <div class="portfolio-wrap">
                   <img
-                    src="assets/img/portfolio/app-1.jpg"
+                    src="assets/img/portfolio/product-1.png"
                     class="img-fluid"
                     alt=""
                   />
                   <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/portfolio/app-1.jpg"
-                      title="App 1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
+                    <h4>Personal Portfolio</h4>
+                    <p>Portfolio Website</p>
+                    <div class="portfolio-links">
+                      <a
+                        href="assets/img/portfolio/product-1.png"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title=""
+                      >
+                        <i class="bx bx-zoom-in"></i>
+                      </a>
+                      <a href=" https://regineriverah.github.io/regine-portfolio/" target="_blank">
+                        <i class="bx bx-link"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
+                <div class="text-center p-3">
+                  <p class="m-2">
+                    Here, you’ll find my certifications, skills, and projects
+                    that reflect my journey in Information Systems. This
+                    platform showcases my growth, interests, and dedication to
+                    continuous learning.
+                  </p>
+                </div>
               </div>
-              <!-- End Portfolio Item -->
 
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+                class="col-lg-6 col-md-12 portfolio-item filter-web"
+                style="position: absolute; left: 552px; top: 0px"
               >
-                <div class="portfolio-content h-100">
+                <div class="portfolio-wrap">
                   <img
-                    src="assets/img/portfolio/product-1.jpg"
+                    src="assets/img/portfolio/product-2.png"
                     class="img-fluid"
                     alt=""
                   />
                   <div class="portfolio-info">
-                    <h4>Product 1</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/portfolio/product-1.jpg"
-                      title="Product 1"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
+                    <h4>INFO.SYSTEM</h4>
+                    <p>Web Application</p>
+                    <div class="portfolio-links">
+                      <a
+                        href="assets/img/portfolio/product-2.png"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title=""
+                      >
+                        <i class="bx bx-zoom-in"></i>
+                      </a>
+                      <a href=" https://regineriverah.github.io/info.system/" target="_blank">
+                        <i class="bx bx-link"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
+                <div class="text-center p-3">
+                  <p class="m-2">
+                    The INFO.SYSTEM is a conceptual platform designed for the
+                    ISS organization, aiming to simplify membership
+                    registration, renewal, access to lesson materials, and
+                    announcements. This project envisions a more efficient and
+                    digital approach to managing ISS-related activities.
+                  </p>
+                  <p>
+                    Watch here: 
+                    <a
+                      href="https://drive.google.com/file/d/17Fiwj7wA7Cm94qYctzAAnHGgki4vWPhp/view?usp=sharing"
+                      target="_blank"
+                      style="margin-left: 10px; text-decoration: underline; color: rgb(222, 101, 252);"
+                    >
+                      <i class="" style="font-size: 16px"> Live Demo</i>
+                    </a>
+                  </p>
+                </div>
               </div>
-              <!-- End Portfolio Item -->
 
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+                class="col-lg-6 col-md-12 portfolio-item filter-web"
+                style="position: absolute; left: 0px; top: 529.45px"
               >
-                <div class="portfolio-content h-100">
+                <div class="portfolio-wrap">
                   <img
-                    src="assets/img/portfolio/product-2.jpg"
+                    src="assets/img/portfolio/product-3.png"
                     class="img-fluid"
                     alt=""
                   />
                   <div class="portfolio-info">
-                    <h4>Product 2</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/portfolio/product-2.jpg"
-                      title="Product 2"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
+                    <h4>NextGen3</h4>
+                    <p>Group Portfolio</p>
+                    <div class="portfolio-links">
+                      <a
+                        href="assets/img/portfolio/product-3.png"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title=""
+                      >
+                        <i class="bx bx-zoom-in"></i>
+                      </a>
+                      <a href="https://nexgen3.netlify.app/" target="_blank">
+                        <i class="bx bx-link"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
+                <div class="text-center p-3">
+                  <p class="m-2">
+                    The NextGen3 group portfolio showcases our collaborative
+                    projects, skills, and achievements in Information Systems.
+                    It highlights our journey, team expertise, and contributions
+                    to various tech initiatives.
+                  </p>
+                </div>
               </div>
-              <!-- End Portfolio Item -->
 
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+                class="col-lg-6 col-md-12 portfolio-item filter-app"
+                style="position: absolute; left: 0px; top: 0px"
               >
-                <div class="portfolio-content h-100">
+                <div class="portfolio-wrap">
                   <img
-                    src="assets/img/portfolio/product-3.jpg"
+                    src="assets/img/portfolio/app-1.png"
                     class="img-fluid"
                     alt=""
                   />
                   <div class="portfolio-info">
-                    <h4>Product 3</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    <a
-                      href="assets/img/portfolio/product-3.jpg"
-                      title="Product 3"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="portfolio-details.html"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
+                    <h4>BloodSync Mobile App</h4>
+                    <p>Mobile Application</p>
+                    <div class="portfolio-links">
+                      <a
+                        href="assets/img/portfolio/app-1.png"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title=""
+                      >
+                        <i class="bx bx-zoom-in"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
+                <div class="text-center p-3">
+                  <p class="m-2">
+                    The BloodSync mobile application streamlines blood donation
+                    by connecting donors and recipients efficiently. It includes
+                    features such as donor registration, emergency alerts,
+                    reward incentives, and offline functionality for critical
+                    situations.
+                  </p>
+                </div>
               </div>
-              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-6 col-md-12 portfolio-item filter-app"
+                style="position: absolute; left: 0px; top: 0px"
+              >
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/app-2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>HANAP Mobile App</h4>
+                    <p>Mobile Application</p>
+                    <div class="portfolio-links">
+                      <a
+                        href="assets/img/portfolio/app-2.png"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title=""
+                      >
+                        <i class="bx bx-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center p-3">
+                  <p class="m-2">
+                    HANAP (Helping All Nanays Achieve Potential) is a mobile application designed to empower mothers by connecting them with job opportunities. 
+        The app includes features like job listings, user profiles, notifications, and job request management.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6 col-md-12 portfolio-item filter-app"
+                style="position: absolute; left: 0px; top: 0px"
+              >
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/app-3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>Spresso Coffee & Co.</h4>
+                    <p>UI Design Concept</p>
+                    <div class="portfolio-links">
+                      <a
+                        href="assets/img/portfolio/app-3.png"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title=""
+                      >
+                        <i class="bx bx-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center p-3">
+                  <p class="m-2">
+                    This is a Figma design concept for Spresso Coffee & Co., showcasing a modern and inviting coffee shop website.  
+        The design emphasizes a warm aesthetic, seamless navigation, and engaging visuals to enhance the customer experience.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-6 col-md-12 portfolio-item filter-app"
+                style="position: absolute; left: 0px; top: 0px"
+              >
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/app-4.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="portfolio-info">
+                    <h4>INFO.SYSTEM</h4>
+                    <p>Web Application</p>
+                    <div class="portfolio-links">
+                      <a
+                        href="assets/img/portfolio/app-4.png"
+                        data-gallery="portfolioGallery"
+                        class="portfolio-lightbox"
+                        title=""
+                      >
+                        <i class="bx bx-zoom-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center p-3">
+                  <p class="m-2">
+                    <p class="m-2">
+                      The INFO.SYSTEM web platform is a conceptual design created in Figma for the ISS organization. It envisions a seamless system for membership registration, renewal, announcements, and access to IS program resources, enhancing efficiency and engagement for members.
+                  </p>
+                  
+                  </p>
+                </div>
+              </div>
             </div>
-            <!-- End Portfolio Container -->
           </div>
+          <!-- End Works  -->
         </div>
       </section>
       <!-- /Portfolio Section -->
@@ -443,7 +596,6 @@
 
     <!-- Preloader -->
     <div id="preloader">
-      <div class="line"></div>
     </div>
 
     <!-- Vendor JS Files -->
@@ -457,7 +609,10 @@
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+    <script src="path/to/isotope.pkgd.min.js"></script>
+    <script src="path/to/glightbox.min.js"></script>
+    <script src="path/to/swiper-bundle.min.js"></script>
+    <script src="path/to/purecounter_vanilla.js"></script>
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
   </body>

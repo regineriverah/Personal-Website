@@ -229,4 +229,68 @@
   }
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
+
+  window.addEventListener("load", () => {
+    let portfolioContainer = document.querySelector(".portfolio-container");
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: ".portfolio-item",
+        layoutMode: "fitRows",
+      });
+
+      let portfolioFilters = document.querySelectorAll("#portfolio-flters li");
+
+      portfolioFilters.forEach((filter) => {
+        filter.addEventListener("click", function (e) {
+          e.preventDefault();
+          portfolioFilters.forEach((el) =>
+            el.classList.remove("filter-active")
+          );
+          this.classList.add("filter-active");
+
+          portfolioIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+        });
+      });
+    }
+  });
+
+  /**
+   * Initiate portfolio lightbox
+   */
+  const portfolioLightbox = GLightbox({
+    selector: ".portfolio-lightbox",
+  });
+
+  /**
+   * Initiate portfolio details lightbox
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: ".portfolio-details-lightbox",
+    width: "90%",
+    height: "90vh",
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper(".portfolio-details-slider", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
+
+  /**
+   * Initiate Pure Counter
+   */
+  new PureCounter();
 })();
